@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+Route Exchange Format (RTZ) XML schema 
+
+Revision 1.0
+
+Source: IEC 61174 Ed 4.0:2015
+-->
+<route xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.cirm.org/RTZ/1/0" version="1.0" xsi:schemaLocation="http://www.cirm.org/RTZ/1/0 rtz.xsd">
+    <routeInfo routeName="1" />
+    <waypoints>
+        <waypoint id="1" name="Waypoint0">
+            <position lat="1.000000" lon="1.000000" />
+        </waypoint>
+    </waypoints>
+    <schedules>
+        <schedule id="1" name="schedule1">
+            <manual>
+                <scheduleElement waypointId="1" etd="2022-07-04T12-00-00Z" eta="2022-07-04T12-00-00Z" />
+            </manual>
+            <calculated>
+                <scheduleElement waypointId="1" etd="2022-07-04T12-00-00Z" eta="2022-07-04T12-00-00Z" />
+            </calculated>
+        </schedule>
+    </schedules>
+</route>

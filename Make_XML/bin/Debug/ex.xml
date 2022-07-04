@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+Route Exchange Format (RTZ) XML schema 
+
+Revision 1.0
+
+Source: IEC 61174 Ed 4.0:2015
+-->
+<route xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.cirm.org/RTZ/1/0" version="1.0" xsi:schemaLocation="http://www.cirm.org/RTZ/1/0 rtz.xsd">
+    <routeinfo routeName="" />
+    <waypoints>
+        <defaultWaypoint radius="1.0">
+            <leg portsideXTD="0.5" starboardXTD="0.1" />
+        </defaultWaypoint>
+        <waypoint id="15" revision="1">
+            <position lat="53.0492" lon="8.87731" />
+        </waypoint>
+        <waypoint id="52" revision="3">
+            <position lat="53.0513" lon="8.87509" />
+            <leg portsideXTD="0.3" starboardXTD="0.3" safetyContour="11.20000000" safetyDepth="22.20000000" geometryType="Orthodrome" />
+        </waypoint>
+        <waypoint id="1" revision="1" name="To the pier">
+            <position lat="53.5123" lon="8.11998" />
+            <leg portsideXTD="0.1" starboardXTD="0.1" />
+        </waypoint>
+        <waypoint id="5" revision="3" name="To the pier">
+            <position lat="53.0492" lon="8.87731" />
+            <leg portsideXTD="0.1" starboardXTD="0.1" safetyContour="11.20000000" safetyDepth="22.20000000" geometryType="Orthodrome" />
+        </waypoint>
+    </waypoints>
+    <schedules>
+        <schedule id="1" name="schedule1">
+            <manual>
+                <sheduleElement waypointId="15" etd="2002-11-17T15:25:00Z" />
+                <sheduleElement waypointId="15" eta="2002-11-17T15:25:00Z" />
+            </manual>
+            <calculated />
+        </schedule>
+        <schedule id="2" name="schedule2">
+            <manual>
+                <sheduleElement waypointId="15" etd="2002-11-17T15:25:00Z" />
+                <sheduleElement waypointId="15" eta="2002-11-17T15:25:00Z" />
+            </manual>
+            <calculated>
+                <sheduleElement waypointId="15" etd="2002-11-17T15:25:00Z" speed="11.34520000" />
+                <sheduleElement waypointId="15" eta="2002-12-17T15:25:00Z" speed="12.66635112" />
+            </calculated>
+        </schedule>
+    </schedules>
+    <extensions />
+</route>
